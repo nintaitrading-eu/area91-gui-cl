@@ -1,0 +1,8 @@
+= area91-gui-cl
+
+Andy Nagels
+Gui wrapper for the area91-cl web application.
+
+== License
+
+See LICENSE.txt.
