@@ -10,17 +10,15 @@
 ; TODO: Check if the server is running. If not, show error message.
 
 (defclass area91-gui () () 
-  " Main gui class "
   (:metaclass qt-class)
   (:qt-superclass "QWidget"))
 
-(defmethod initialize-instance :after
-  " Init instance "
-  ((instance area91-gui) &key) 
+(defmethod initialize-instance :after ((instance area91-gui) &key) 
+  "Init instance."
   (new instance))
 
 (defmethod initialize-instance :after ((instance area91-gui) &key)
-  " Init instance with settings "
+  "Init instance with settings."
   (new instance) 
   (#_setGeometry instance 200 200 300 300)
   (#_setWindowTitle instance "Area91"))
